@@ -11,5 +11,5 @@ create table borrow_books(
 	borrow_id int auto_increment primary key,
     book_id char(5),
     foreign key (book_id) references book(book_id),
-    borrow_date date default (current_date)
+    borrow_date timestamp default (current_timestamp)
 );
